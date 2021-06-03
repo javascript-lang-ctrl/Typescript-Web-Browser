@@ -1,0 +1,33 @@
+<html>
+<body style="background-color:#646464">
+<title> browser </title>
+<input type="text" id="search" placeholder="search with a https://">
+<button id="searchbtn" onclick="searchforsomething();">search</button>
+<p><input type="text" id="Bob" placeholder ="search bing">
+<button id="searchbtn" onclick="searchforsomethingb();">search</button>
+</p>
+<ul> Shortcuts
+<li><a href="https://www.youtube.com">youtube</a></li>
+<li><a href="https://www.ebay.com">eBay</a></li>
+<li><a href="https://www.amazon.com">amazon</a></li>
+<li><a href="https://www.github.com">Github</a></li>
+<li><a href="https://www.bing.com">bing</a></li>
+<li><a href="https://www.google.com">google</a></li>
+<li><a href="https://www.microsoft.com">Microsoft</a></li>
+<li><a href="https://www.apple.com">apple</a></li>
+ </ul>
+
+<script lang="Typescript">
+const searchBar = document.getElementById('search');
+const searchbutton = document.getElementById('searchbtn');
+function searchforsomething(){
+window.open(searchBar.value);
+
+}
+function searchforsomethingb(){
+window.open("https://www.bing.com/search?q=" + document.getElementById('Bob').value);
+
+}
+</script>
+</body>
+</html>
